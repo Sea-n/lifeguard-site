@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic"); */
 
 /*
 	Multiverse by HTML5 UP
@@ -362,6 +362,7 @@ input, select, textarea {
 
 /* Button */
 
+	/*
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -490,6 +491,7 @@ input, select, textarea {
 			pointer-events: none;
 			opacity: 0.35;
 		}
+	*/
 
 /* Form */
 
