@@ -493,6 +493,7 @@ input, select, textarea {
 
 /* Form */
 
+	/*
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -740,6 +741,7 @@ input, select, textarea {
 		color: #707071 !important;
 		opacity: 1.0;
 	}
+	*/
 
 /* Icon */
 
@@ -1324,7 +1326,7 @@ input, select, textarea {
 			}
 
 			.poptrox-popup .caption {
-				display: none !important;
+				/* display: none !important; */
 			}
 
 			.poptrox-popup .closer,
@@ -1977,7 +1979,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		/* @media screen and (max-width: 480px) {
 
 			#main .thumb {
 				-moz-transition-delay: 1.175s;
@@ -2010,7 +2012,7 @@ input, select, textarea {
 					transition-delay: 0.95s;
 				}
 
-		}
+		} */
 
 /* Footer */
 
