@@ -1,32 +1,4 @@
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
+@import "common.css";
 
 blockquote, q {
 	quotes: none;
@@ -40,10 +12,6 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
 }
 
 mark {
@@ -67,14 +35,6 @@ mark {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
-
-	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2713,10 +2673,6 @@ mark {
 /* Banner */
 
 	#banner {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-position: center, center;
 		padding: 10em 0 4.75em 0 ;
 	}
 
@@ -3263,13 +3219,6 @@ mark {
 
 /* Footer */
 
-	#footer {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-position: center, center;
-	}
-
 	#footer .inner {
 		padding: 5em 0 3em 0 ;
 		display: -moz-flex;
@@ -3411,155 +3360,3 @@ mark {
 		}
 
 	}
-
-
-
-/* Icons */
-
-ul.icons {
-	cursor: default;
-	list-style: none;
-	padding-left: 0;
-}
-
-ul.icons li {
-	display: inline-block;
-	padding: 0 1em 0 0;
-}
-
-ul.icons li:last-child {
-	padding-right: 0;
-}
-
-ul.icons li .icon {
-	color: #ddd;
-}
-
-ul.icons li .icon:before {
-	font-size: 1.5em;
-}
-
-a.fa-telegram:hover {
-	color: #08c !important;
-}
-
-a.fa-facebook:hover {
-	color: #4267b2 !important;
-}
-
-a.fa-users:hover {
-	color: white !important;
-}
-
-/* Header */
-
-body {
-	padding: 0 0 4em 0;
-}
-
-#header {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	-moz-transition: -moz-transform 1s ease;
-	-webkit-transition: -webkit-transform 1s ease;
-	transition: transform 1s ease;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	background: #1f2224;
-	bottom: -1em;
-	height: 5em;
-	left: 0;
-	line-height: 4em;
-	padding: 0 1.5em;
-	position: fixed;
-	user-select: none;
-	width: 100%;
-	z-index: 10002;
-}
-
-body.is-preload #header {
-	-moz-transform: translateY(4em);
-	-webkit-transform: translateY(4em);
-	transform: translateY(4em);
-}
-
-#header h1 {
-	color: #a0a0a1;
-	display: inline-block;
-	font-size: 1em;
-	line-height: 1;
-	margin: 0;
-	vertical-align: middle;
-}
-
-#header h1 a {
-	border: 0;
-	color: inherit;
-}
-
-#header h1 a:hover {
-	color: inherit !important;
-}
-
-#header nav {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-#header nav > ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#header nav > ul > li {
-	display: inline-block;
-	padding: 0;
-}
-
-#header nav > ul > li a {
-	-moz-transition: background-color 0.5s ease;
-	-webkit-transition: background-color 0.5s ease;
-	transition: background-color 0.5s ease;
-	border: 0;
-	color: #ffffff;
-	display: inline-block;
-	letter-spacing: 0.1em;
-	padding: 0 1.65em;
-	text-transform: uppercase;
-}
-
-#header nav > ul > li a.icon:before {
-	color: #505051;
-	float: right;
-	margin-left: 0.75em;
-}
-
-#header nav > ul > li a:hover {
-	color: #ffffff !important;
-}
-
-#header nav > ul > li a.active {
-	background-color: #242629;
-}
-
-@media screen and (max-width: 736px) {
-
-	body.is-preload #header {
-		-moz-transform: translateY(-3.4em);
-		-webkit-transform: translateY(-3.4em);
-		transform: translateY(-3.4em);
-	}
-
-	#header h1 {
-		font-size: 0.9em;
-	}
-
-	#header nav > ul > li a {
-		font-size: 0.9em;
-		padding: 0 1.15em;
-	}
-
-}

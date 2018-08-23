@@ -24,7 +24,7 @@
 				<h1><strong>清水救生隊</strong> 學員心得</h1>
 				<nav>
 					<ul>
-						<li><a href="/" class="icon fa fa-comments">活動簡介</a></li>
+						<li><a href="/" class="icon fa fa-swimmer">活動簡介</a></li>
 						<li><a href="#classes" class="icon fa fa-info-circle">開班資訊</a></li>
 					</ul>
 				</nav>
@@ -43,6 +43,12 @@
 
 <?php
 $list = [
+	[
+		"name" => "賴嬿文",
+		"pic" => "yen-wen",
+		"text" => "我愛玩水，想說參加救生班能學會一些水中自救的技巧，這樣一來，能在水裡玩得安心又開心。也能在救生班裡，交到愛玩水的學員和教練呢！",
+		"footer" => "2018 年 33 期學員"
+	],
 	[
 		"name" => "韋詠祥",
 		"pic" => "sean",
@@ -68,12 +74,6 @@ $list = [
 		"footer" => "2049 年 42 期學員"
 	],
 	[
-		"name" => "雷伊",
-		"pic" => "tmp5",
-		"text" => "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim		  dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
-		"footer" => "2049 年 42 期學員"
-	],
-	[
 		"name" => "Doge",
 		"pic" => "tmp6",
 		"text" => "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim		  dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
@@ -82,7 +82,7 @@ $list = [
 ];
 
 $keys = array_keys($list);
-shuffle($keys);
+# shuffle($keys);
 
 for ($seq = 1; $seq <= 6; $seq++) {
 	$data = $list[$keys[$seq-1]];
@@ -108,25 +108,25 @@ for ($seq = 1; $seq <= 6; $seq++) {
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
 											<h3 class="major">救生訓練班</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
 											<h3 class="major">小小救生班</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/thumbs/16.jpg" alt="" /></a>
 											<h3 class="major">成人初級班</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/thumbs/14.jpg" alt="" /></a>
 											<h3 class="major">十式精進班</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
