@@ -44,16 +44,22 @@
 <?php
 $list = [
 	[
+		"name" => "韋詠祥",
+		"pic" => "sean",
+		"text" => "在我升高中的暑假，跟著爸媽一起上救生班，當時也沒想太多，覺得只不過是一個月的游泳訓練罷了。但才上幾天就發覺，雖然各位教練、助教都是志工 (偶而還會自掏腰包請學員)，但每個人都很 nice ，讓人忍不住加入這個良性循環中。<br><br>除了救生班每週假日有精心安排的課程活動，一直到兩年後的現在，不管是十式班、教練先修班、小小救生班，都還是遠比想像中還來得豐富精彩。",
+		"footer" => "2016 年 29 期學員"
+	],
+	[
+		"name" => "曾意文",
+		"pic" => "tmp1",
+		"text" => "一直以來都很喜歡玩水，但一直沒能學會游泳，去年透過朋友的關係進到清水隊學游泳，本來只是短暫 2 週的初級班，因為隊上同仁的邀約，一路上到了救生班還完成了十式班，遠遠比自己預期的多學了很多。<br><br>過程中遇到的教練和助教都很熱情分享自己游泳的經驗，覺得自己能在隊上成長這麼多是因為前輩們能適時地給予指導，專業知識也很充足，以後在開放水域玩水，就不用提心吊膽了，在救生班學到的專業可以讓我保護好自己、遠離危險。<br><br>在清水，大家能有相同嗜好，一起精進泳技，這裡真的是一個很好的團隊。",
+		"footer" => "2017 年 31 期學員"
+	],
+	[
 		"name" => "賴嬿文",
 		"pic" => "yen-wen",
 		"text" => "我愛玩水，想說參加救生班能學會一些水中自救的技巧，這樣一來，能在水裡玩得安心又開心。也能在救生班裡，交到愛玩水的學員和教練呢！",
 		"footer" => "2018 年 33 期學員"
-	],
-	[
-		"name" => "韋詠祥",
-		"pic" => "sean",
-		"text" => "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim		  dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
-		"footer" => "2016 年 29 期學員"
 	],
 	[
 		"name" => "韋詠欣",
@@ -61,12 +67,14 @@ $list = [
 		"text" => "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim		  dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
 		"footer" => "2018 年 33 期學員"
 	],
+	/*
 	[
 		"name" => "伊布",
 		"pic" => "tmp1",
 		"text" => "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim		  dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
 		"footer" => "2049 年 42 期學員"
 	],
+	 */
 	[
 		"name" => "六尾",
 		"pic" => "tmp4",
@@ -89,7 +97,7 @@ for ($seq = 1; $seq <= 6; $seq++) {
 ?>
 							<section id="review<?= $seq ?>" class="wrapper <?= $seq % 2 ? "alt" : "" ?> spotlight style<?= $seq ?>">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/avatars/<?= $data['pic'] ?>.jpg" alt="<?= $data['name'] ?>" /></a>
+									<img class="image" src="images/avatars/<?= $data['pic'] ?>.jpg" alt="<?= $data['name'] ?>" />
 									<div class="content">
 										<h2 class="major"><?= $data['name'] ?></h2>
 										<p><?= $data['text'] ?></p>
